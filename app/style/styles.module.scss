@@ -1,0 +1,53 @@
+$error_color: #bf4342;
+$menu_iteam_color: #000000;
+$text_color: #010101;
+$link-color: #1890ff;
+$link-hover-color: #52a3ef;
+$primary-color: #4cf661;
+$color: #fff;
+$secondary-background: #fff;
+$danger-color: #bf4342;
+$success-color: #28a745;
+$font-size: 19px;
+$font-style: italic;
+$title-font-size: 22px;
+$text-font-size: 16px;
+$font-weight: 800;
+$border-radius: 10px;
+$opacity: 0.8;
+$primary-dark: #1a1a1a;
+
+@mixin display-center($display, $justify-content, $align-items) {
+    display: $display;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
+@mixin display-flex-direction($display, $flex-direction, $align-items) {
+    display: $display;
+    flex-direction: $flex-direction;
+    align-items: $align-items;
+}
+
+@mixin display-grid {
+    display: grid;
+    grid-gap: 5px;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(470px, 1fr));
+    border-radius: 10px;
+}
+
+@mixin text-style {
+    color: $text_color;
+    font-size: $text-font-size;
+    font-weight: $font-weight;
+}
+
+@mixin input-style {
+    border: 2px solid !important;
+}
+
+@mixin button {
+    width: 150px;
+    margin: 0 auto;
+}

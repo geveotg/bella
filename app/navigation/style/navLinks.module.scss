@@ -1,0 +1,16 @@
+@import "../header/header.module.scss";
+
+.navigation {
+    @include display-center(flex, center, center);
+}
+
+.logo {
+    height: 10vh;
+    object-fit: contain;
+}
+
+@media screen and (max-width: 767px) {
+    .navigation {
+        display: none;
+    }
+}
